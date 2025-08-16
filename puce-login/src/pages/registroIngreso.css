@@ -1,0 +1,132 @@
+/* Contenedor general */
+.registro-wrap {
+  display: grid;
+  gap: 16px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* Card “hero” de bienvenida */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--ion-color-primary),
+    var(--ion-color-primary-tint)
+  );
+  color: white;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.hero-sub {
+  opacity: 0.9;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+/* Card de verificación */
+.card {
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Inputs */
+.compact .item-native {
+  --min-height: 44px;
+}
+.compact ion-input {
+  font-size: 16px;
+}
+
+/* Botones */
+.btn-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.btn-stretch {
+  width: 100%;
+}
+
+/* Tabla */
+.table-wrap {
+  overflow: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pretty-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--ion-color-light);
+}
+
+.pretty-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--ion-color-light);
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.pretty-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  font-size: 15px;
+}
+
+.pretty-table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+/* Etiquetas pequeñas */
+.kicker {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ion-color-medium);
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hero-top {
+    align-items: flex-start;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
